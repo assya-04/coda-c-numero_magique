@@ -12,7 +12,7 @@ int main ()
 	//printf("random_number :%d\n", random_number);
 
 
-	while(random_number!=num)
+	/*while(random_number!=num)
 	{
 // Choix du nombre de l'utilisateur
 		printf("Choisissez un nombre entre 0 et 100\n");
@@ -31,6 +31,22 @@ int main ()
 			printf("C'est moins !\n");
 		}
 	}
+*/
+		printf("Choisissez un nombre entre 0 et 100\n");
+		scanf("%d",&num);
+
+		if(random_number==num)
+		{
+			printf("Gagné !\n");
+		}
+		else if(random_number>num)
+		{
+			printf("C'est plus ! \n");
+		}
+		else 
+		{
+			printf("C'est moins !\n");
+		}
 
 	
 	
