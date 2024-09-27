@@ -8,8 +8,13 @@ int main ()
 	int random_number=rand() % 100 + 1;
 	int num;
 
-
 	//printf("random_number :%d\n", random_number);
+
+//Nombre de tentative
+	int nb_tentative=0;
+
+
+	
 
 
 	while(random_number!=num)
@@ -17,6 +22,7 @@ int main ()
 // Choix du nombre de l'utilisateur
 		printf("Choisissez un nombre entre 0 et 100\n");
 		scanf("%d",&num);
+		++nb_tentative;
 
 		if(random_number==num)
 		{
@@ -35,6 +41,9 @@ int main ()
 			printf("C'est moins !\n");
 		}
 	}
+	
+//Nombre de tentatives
+	printf("Vous avez trouvez au bout de la %d-ème tentative.\n",nb_tentative);
 	
 	
 	exit(0);
